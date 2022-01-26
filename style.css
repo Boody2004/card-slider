@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.swiper {
+  width: 950px;
+  /* width: 90%; */
+}
+section {
+  position: relative;
+  height: 450px;
+  width: 1075px;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+}
+section .card {
+  position: relative;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 20px;
+}
+section .card::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #7d2ae8;
+  border-radius: 20px 20px 0 0;
+}
+section .card-content {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+section .card .card-content .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #7d2ae8;
+}
+section .card .card-content .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+section .card .card-content .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .card .card-content .media-icons i {
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+section .card .card-content .media-icons i:hover {
+  opacity: 1;
+}
+section .card .card-content .name-profession {
+  color: #333;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .card .card-content .name-profession .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+section .card .card-content .name-profession .profession {
+  font-size: 15px;
+  font-weight: 500;
+}
+section .card .card-content .rating {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+section .card .card-content .rating i {
+  font-size: 18px;
+  margin: 0 2px;
+  color: #7d2ae8;
+}
+section .card .card-content .button {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+section .card .card-content .button button {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 22px;
+  font-size: 14px;
+  color: #fff;
+  background: #7d2ae8;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+section .card .card-content .button button:hover {
+  background: #6616d0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0.7;
+  color: #7d2ae8;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #7d2ae8;
+}
